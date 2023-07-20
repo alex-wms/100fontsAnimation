@@ -1,0 +1,17 @@
+.line-through {
+    position: relative;
+}
+
+.line-through-hr {
+    height: 3px;
+    border:none;
+    width: 0%;
+    position: absolute;
+    top: calc(50% - 3px/2);
+    transition: width 0.3s ease-in;
+    margin: 0;
+}
+
+.line-through:hover > .line-through-hr {
+    width: 100%;
+}

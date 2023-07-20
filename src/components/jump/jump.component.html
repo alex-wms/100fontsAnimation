@@ -1,0 +1,6 @@
+<span #jump id="jump" [ngStyle]="getStyle()">
+    <span *ngFor="let letter of wordDefine.split(''); let index = index" class="generatedSpan"
+        [ngStyle]="{'animation-delay':'0.'+(index+1)+'s'}">
+        {{ letter }}
+    </span>
+</span>

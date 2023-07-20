@@ -1,0 +1,4 @@
+.to-italic:hover {
+    word-wrap: none;
+    font-style: italic;
+}

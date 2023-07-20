@@ -1,0 +1,58 @@
+<div>
+  <input type="color" id="bgColor" [(ngModel)]="initialBackgroundColor">
+  <input type="text" [(ngModel)]="wordDefine">
+</div>
+
+<div id="main-container">
+  <app-cards-container>
+    <app-brilliance [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-brilliance>
+  </app-cards-container>
+  <app-cards-container>
+    <app-slide-in [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-slide-in>
+  </app-cards-container>
+  <app-cards-container>
+    <app-slide-out [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-slide-out>
+  </app-cards-container>
+  <app-cards-container>
+    <app-slide-down [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-slide-down>
+  </app-cards-container>
+  <app-cards-container>
+    <app-slide-up [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-slide-up>
+  </app-cards-container>
+  <app-cards-container>
+    <app-typing [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-typing>
+  </app-cards-container>
+  <app-cards-container>
+    <app-jump [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-jump>
+  </app-cards-container>
+  <app-cards-container>
+    <app-to-italic [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-to-italic>
+  </app-cards-container>
+  <app-cards-container>
+    <app-underline [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-underline>
+  </app-cards-container>
+  <app-cards-container>
+    <app-underline-from-left [backgroundColor]="initialBackgroundColor"
+      [wordDefine]="wordDefine"></app-underline-from-left>
+  </app-cards-container>
+  <app-cards-container>
+    <app-underline-from-right [backgroundColor]="initialBackgroundColor"
+      [wordDefine]="wordDefine"></app-underline-from-right>
+  </app-cards-container>
+  <app-cards-container>
+    <app-underline-from-center [backgroundColor]="initialBackgroundColor"
+      [wordDefine]="wordDefine"></app-underline-from-center>
+  </app-cards-container>
+  <app-cards-container>
+    <app-line-through [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-line-through>
+  </app-cards-container>
+  <app-cards-container>
+    <app-highlight [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-highlight>
+  </app-cards-container>
+  <app-cards-container>
+    <app-bigger [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-bigger>
+  </app-cards-container>
+  <app-cards-container>
+    <app-smaller [backgroundColor]="initialBackgroundColor" [wordDefine]="wordDefine"></app-smaller>
+  </app-cards-container>
+</div>

@@ -1,0 +1,19 @@
+.underline-from-right {
+    position: relative;
+}
+
+
+.underline-from-right-hr {
+    height: 5px;
+    border:none;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    transition: width 0.3s ease-in;
+    text-underline-position: right under;
+}
+
+.underline-from-right:hover .underline-from-right-hr {
+    width: 100%;
+}

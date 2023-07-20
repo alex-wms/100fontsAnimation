@@ -1,0 +1,8 @@
+.smaller {
+    font-size: 200%;
+    transition: font-size 0.25s ease-in;
+}
+
+.smaller:hover {
+    font-size: 125%;
+}

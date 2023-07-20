@@ -1,0 +1,16 @@
+#slideOut {
+    user-select: none;
+    cursor: pointer;
+    display: inline;
+    /* Gérer dans le TS 
+    background-image: none; */ 
+    background-size: 200% 100%;
+    background-position: -100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s ease-in-out;
+}
+
+#slideOut:hover {
+    background-position: 0%;
+}

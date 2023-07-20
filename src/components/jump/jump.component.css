@@ -1,0 +1,15 @@
+span.generatedSpan {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+}
+
+span:hover .generatedSpan {
+    animation: bounce 0.3s ease 2 alternate;
+}
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+    }
+}
