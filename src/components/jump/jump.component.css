@@ -4,7 +4,7 @@ span.generatedSpan {
     display: inline-block;
 }
 
-span:hover .generatedSpan {
+span.play .generatedSpan {
     animation: bounce 0.3s ease 2 alternate;
 }
 

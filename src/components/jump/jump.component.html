@@ -1,6 +1,8 @@
-<span #jump id="jump" [ngStyle]="getStyle()">
-    <span *ngFor="let letter of wordDefine.split(''); let index = index" class="generatedSpan"
-        [ngStyle]="{'animation-delay':'0.'+(index+1)+'s'}">
-        {{ letter }}
+<app-cards-container (isPlaying)="onPlaying($event)">
+    <span #jump class="jump" [ngClass]="{'play': isPlaying === true}" [ngStyle]="getStyle()">
+        <span *ngFor="let letter of wordDefine.split(''); let index = index" class="generatedSpan"
+            [ngStyle]="{'animation-delay':'0.'+(index+1)+'s'}">
+            {{ letter }}
+        </span>
     </span>
-</span>
+</app-cards-container>

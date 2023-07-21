@@ -1,4 +1,6 @@
-<span class="highlight" [ngStyle]="getStyle()">
-    {{ wordDefine }}
-    <hr class="highlight-hr" [ngStyle]="getHrStyle()">
-</span>
+<app-cards-container (isPlaying)="onPlaying($event)">
+    <span [ngClass]="{'play': isPlaying === true}" class="highlight" [ngStyle]="getStyle()">
+        {{ wordDefine }}
+        <hr class="highlight-hr" [ngStyle]="getHrStyle()">
+    </span>
+</app-cards-container>

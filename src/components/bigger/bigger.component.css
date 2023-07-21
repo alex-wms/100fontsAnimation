@@ -3,6 +3,6 @@
     transition: font-size 0.25s ease-in;
 }
 
-.bigger:hover {
+.bigger.play {
     font-size: 275%;
 }

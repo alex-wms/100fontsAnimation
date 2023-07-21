@@ -1,3 +1,5 @@
-<span class="underline" [ngStyle]="getStyle()">
-    {{ wordDefine }}
-</span>
+<app-cards-container (isPlaying)="onPlaying($event)">
+    <span [ngClass]="{'play': isPlaying === true}" class="underline" [ngStyle]="getStyle()">
+        {{ wordDefine }}
+    </span>
+</app-cards-container>

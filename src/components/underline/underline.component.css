@@ -3,6 +3,6 @@
     border-bottom: none;
 }
 
-.underline:hover {
+.underline.play {
     border-bottom: 5px solid;
 }

@@ -1,4 +1,4 @@
-#brilliance {
+.brilliance {
     user-select: none;
     cursor: pointer;
     display: inline;
@@ -11,6 +11,6 @@
     transition: all 0.6s ease-in-out;
 }
 
-#brilliance:hover {
+.brilliance.play {
     background-position: -20%;
 }

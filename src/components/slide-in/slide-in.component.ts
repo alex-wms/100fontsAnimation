@@ -9,12 +9,17 @@ export class SlideInComponent implements OnInit {
   
   @Input() backgroundColor: string; 
   @Input() wordDefine: string;
+  isPlaying: boolean = false;
   hoverBackgroundColor: string = "#f2b805" 
   
   ngOnInit() {
     if(this.wordDefine === "") {
       this.wordDefine = "SlideIn"
     }
+  }
+
+  onPlaying(event) {
+    this.isPlaying = event
   }
   
   getStyle() {

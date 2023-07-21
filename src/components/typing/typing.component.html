@@ -1,1 +1,3 @@
-<span id="typing" [ngStyle]="getStyle()">{{ wordDefine }}</span>
+<app-cards-container (isPlaying)="onPlaying($event)">
+    <span [ngClass]="{'play': isPlaying === true}" class="typing" [ngStyle]="getStyle()">{{ wordDefine }}</span>
+</app-cards-container>

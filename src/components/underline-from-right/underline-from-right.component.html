@@ -1,4 +1,6 @@
-<span class="underline-from-right" [ngStyle]="getStyle()">
-    {{ wordDefine }}
-    <hr class="underline-from-right-hr" [ngStyle]="getHrStyle()">
-</span>
+<app-cards-container (isPlaying)="onPlaying($event)">
+    <span [ngClass]="{'play': isPlaying === true}" class="underline-from-right" [ngStyle]="getStyle()">
+        {{ wordDefine }}
+        <hr class="underline-from-right-hr" [ngStyle]="getHrStyle()">
+    </span>
+</app-cards-container>

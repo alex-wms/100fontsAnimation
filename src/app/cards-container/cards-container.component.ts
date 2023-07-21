@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cards-container',
@@ -6,4 +6,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./cards-container.component.css']
 })
 export class CardsContainerComponent {
-}
+  @Output() isPlaying = new EventEmitter<boolean>()
+
+  onMouseEnter() {
+    this.isPlaying.emit(true);
+  }
+  
+  onMouseLeave() {
+    this.isPlaying.emit(false)
+  }
+} 

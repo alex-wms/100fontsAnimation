@@ -3,6 +3,6 @@
     transition: font-size 0.25s ease-in;
 }
 
-.smaller:hover {
+.smaller.play {
     font-size: 125%;
 }

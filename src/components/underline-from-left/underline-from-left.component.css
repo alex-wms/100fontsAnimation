@@ -7,6 +7,6 @@
     margin: 0;
 }
 
-.underline-from-left:hover .underline-from-left-hr {
+.underline-from-left.play .underline-from-left-hr {
     width: 100%;
 }

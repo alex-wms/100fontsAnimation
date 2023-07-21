@@ -40,7 +40,7 @@ import { SmallerComponent } from '../components/smaller/smaller.component';
     LineThroughComponent,
     HighlightComponent,
     BiggerComponent,
-    SmallerComponent
+    SmallerComponent,
   ],
   imports: [
     BrowserModule,

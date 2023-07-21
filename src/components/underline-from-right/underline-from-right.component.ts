@@ -8,11 +8,16 @@ import { Component, Input } from '@angular/core';
 export class UnderlineFromRightComponent {
   @Input() backgroundColor: string; 
   @Input() wordDefine: string;
+  isPlaying: boolean = false;
   
   ngOnInit() {
     if(this.wordDefine === "") {
       this.wordDefine = "Underliner"
     }
+  }
+  
+  onPlaying(event) {
+    this.isPlaying = event
   }
   
   getStyle() {

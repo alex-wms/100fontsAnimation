@@ -9,11 +9,16 @@ export class SlideOutComponent {
   @Input() backgroundColor: string; 
   @Input() wordDefine: string;
   hoverBackgroundColor: string = "#f2b805" 
+  isPlaying: boolean = false;
   
   ngOnInit() {
     if(this.wordDefine === "") {
       this.wordDefine = "SlideOut"
     }
+  }
+  
+  onPlaying(event) {
+    this.isPlaying = event
   }
   
   getStyle() {

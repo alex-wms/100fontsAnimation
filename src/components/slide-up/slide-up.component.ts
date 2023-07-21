@@ -9,13 +9,19 @@ export class SlideUpComponent implements OnInit {
   @Input() backgroundColor: string; 
   @Input() wordDefine: string;
   hoverBackgroundColor: string = "#f2b805" 
-  
+  isPlaying: boolean = false;
+
   ngOnInit() {
     if(this.wordDefine === "") {
       this.wordDefine = "SlideUp"
     }
   }
   
+  onPlaying(event) {
+    this.isPlaying = event
+  }
+  
+
   getStyle() {
     return {
       backgroundImage: `linear-gradient(

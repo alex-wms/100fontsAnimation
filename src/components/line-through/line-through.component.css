@@ -12,6 +12,6 @@
     margin: 0;
 }
 
-.line-through:hover > .line-through-hr {
+.line-through.play > .line-through-hr {
     width: 100%;
 }

@@ -6,6 +6,6 @@
     margin: auto;
 }
 
-.underline-from-center:hover .underline-from-center-hr {
+.underline-from-center.play .underline-from-center-hr {
     width: 100%;
 }
