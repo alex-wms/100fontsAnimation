@@ -14,6 +14,6 @@
     text-underline-position: right under;
 }
 
-.underline-from-right:hover .underline-from-right-hr {
+.underline-from-right.play .underline-from-right-hr {
     width: 100%;
 }
