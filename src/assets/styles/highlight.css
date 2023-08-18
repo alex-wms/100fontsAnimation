@@ -1,0 +1,18 @@
+.highlight {
+    position: relative;
+}
+
+.highlight-hr {
+    height: 100%;
+    border:none;
+    width: 0%;
+    position: absolute;
+    top: calc(50% - 100%/2);
+    transition: width 0.3s ease-in;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.highlight.play > .highlight-hr {
+    width: 100%;
+}

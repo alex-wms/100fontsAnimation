@@ -1,0 +1,8 @@
+.bigger {
+    font-size: 200%;
+    transition: font-size 0.25s ease-in;
+}
+
+.bigger.play {
+    font-size: 275%;
+}

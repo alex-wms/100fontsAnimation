@@ -1,0 +1,14 @@
+.slideUp {
+    /* Gérer dans le TS 
+    background-image: none; */ 
+    background-size: 100% 200%;
+    background-position: 0% -100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s ease-in-out;
+}
+
+.slideUp.play {
+    background-position: 0% 0%;
+}

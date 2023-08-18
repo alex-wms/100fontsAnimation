@@ -1,0 +1,11 @@
+.underline-from-center-hr {
+    height: 5px;
+    border:none;
+    width: 0%;
+    transition: width 0.3s ease-in;
+    margin: auto;
+}
+
+.underline-from-center.play .underline-from-center-hr {
+    width: 100%;
+}
